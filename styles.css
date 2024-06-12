@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    background-color: #F1F8FA;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+    color: black;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: black;
+    line-height: 1.6;
+}
+
+#gallery .gallery-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5em 0;
+}
+
+footer {
+    background-color: #F1F8FA;
+    color: #000;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+}
+
+a:focus {
+    outline: 2px solid #000;
+    background-color: #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+    
+    #gallery .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav-menu.active {
+        display: block;
+    }
+    .nav-menu {
+        flex-direction: column;
+    }
+    .nav-menu li {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    #gallery .gallery-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 901px) {
+    #gallery .gallery-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Minified CSS */
+body{font-family:Arial,sans-serif;margin:0;padding:0;position:relative}header{background-color:#F1F8FA;padding:1em 0;text-align:center;position:sticky;top:0}nav ul{list-style:none;padding:0}nav ul li{display:inline;margin:0 1em;color:black}nav ul li a{color:black;text-decoration:none}main{padding:1em;color:black;margin-bottom:10px}section{margin-bottom:2em}h1{color:black}p{color:black;line-height:1.6}#gallery .gallery-container{display:grid;gap:10px;padding:10px}#gallery img{max-width:100%;height:auto;display:block;margin:.5em 0}footer{background-color:#F1F8FA;color:#000;text-align:center;position:fixed;width:100%;height:fit-content;bottom:0}@media(max-width:768px){nav ul li{display:block;margin:.5em 0}#gallery .gallery-container{grid-template-columns:1fr}}@media(min-width:601px) and (max-width:900px){#gallery .gallery-container{grid-template-columns:1fr 1fr}}@media(min-width:901px){#gallery .gallery-container{grid-template-columns:1fr 1fr 1fr}}
